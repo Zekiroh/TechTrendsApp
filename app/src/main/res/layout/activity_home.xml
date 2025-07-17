@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp"
+    android:background="#F5F5F5">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <!-- Header -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="AI and Tech Trends"
+            android:textColor="#1E1E1E"
+            android:textStyle="bold"
+            android:textSize="24sp"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="4dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="The latest innovations, all in one place."
+            android:textSize="14sp"
+            android:textStyle="italic"
+            android:layout_marginBottom="16dp" />
+
+        <!-- AI Illustration -->
+        <ImageView
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:src="@drawable/ic_ai_robot"
+            android:layout_marginBottom="20dp"
+            android:contentDescription="AI Robot Icon" />
+
+        <!-- Grid Layout Section -->
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="2"
+            android:rowCount="3"
+            android:alignmentMode="alignMargins"
+            android:columnOrderPreserved="false"
+            android:useDefaultMargins="true">
+
+            <!-- Generative AI Card -->
+            <LinearLayout
+                android:id="@+id/btn_generative_ai"
+                style="@style/GridCardStyle">
+                <ImageView
+                    android:src="@drawable/ic_ai"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_marginBottom="6dp" />
+                <TextView
+                    android:text="Generative AI"
+                    style="@style/CardTitleStyle" />
+                <TextView
+                    android:text="Create content with AI"
+                    style="@style/CardSubtextStyle" />
+            </LinearLayout>
+
+            <!-- Healthcare AI Card -->
+            <LinearLayout
+                android:id="@+id/btn_healthcare_ai"
+                style="@style/GridCardStyle">
+                <ImageView
+                    android:src="@drawable/ic_healthcare"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_marginBottom="6dp" />
+                <TextView
+                    android:text="Healthcare AI"
+                    style="@style/CardTitleStyle" />
+                <TextView
+                    android:text="Transform patient care"
+                    style="@style/CardSubtextStyle" />
+            </LinearLayout>
+
+            <!-- Autonomous Tech Card -->
+            <LinearLayout
+                android:id="@+id/btn_autonomous_tech"
+                style="@style/GridCardStyle">
+                <ImageView
+                    android:src="@drawable/ic_autonomous"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_marginBottom="6dp" />
+                <TextView
+                    android:text="Autonomous Tech"
+                    android:textAlignment="center"
+                    style="@style/CardTitleStyle" />
+                <TextView
+                    android:text="Smart systems in action"
+                    android:textAlignment="center"
+                    style="@style/CardSubtextStyle" />
+            </LinearLayout>
+
+            <!-- XR Card -->
+            <LinearLayout
+                android:id="@+id/btn_xr"
+                style="@style/GridCardStyle">
+                <ImageView
+                    android:src="@drawable/ic_xr"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_marginBottom="6dp" />
+                <TextView
+                    android:text="Extended Reality (XR)"
+                    android:textAlignment="center"
+                    style="@style/CardTitleStyle" />
+                <TextView
+                    android:text="Virtual and Augmented tech"
+                    android:textAlignment="center"
+                    style="@style/CardSubtextStyle" />
+            </LinearLayout>
+
+            <!-- Ethical AI Card -->
+            <LinearLayout
+                android:id="@+id/btn_ethical_ai"
+                style="@style/GridCardStyle">
+                <ImageView
+                    android:src="@drawable/ic_ethics"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_marginBottom="6dp" />
+                <TextView
+                    android:text="Ethical AI"
+                    style="@style/CardTitleStyle" />
+                <TextView
+                    android:text="Fair and safe practices"
+                    style="@style/CardSubtextStyle" />
+            </LinearLayout>
+
+            <!-- Glossary Card -->
+            <LinearLayout
+                android:id="@+id/btn_glossary"
+                style="@style/GridCardStyle">
+                <ImageView
+                    android:src="@drawable/ic_glossary"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_marginBottom="6dp" />
+                <TextView
+                    android:text="Glossary"
+                    style="@style/CardTitleStyle" />
+                <TextView
+                    android:text="Terms and meanings"
+                    style="@style/CardSubtextStyle" />
+            </LinearLayout>
+        </GridLayout>
+
+        <!-- Footer -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Code Zero • Final Project in IT0079"
+            android:textColor="#AAAAAA"
+            android:textSize="12sp"
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="12dp" />
+
+    </LinearLayout>
+</ScrollView>

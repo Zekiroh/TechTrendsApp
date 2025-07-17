@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Glossary"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="12dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="• LLM – Large Language Model: A type of AI trained on massive text datasets.\n\n• NLP – Natural Language Processing: The ability of AI to understand and process human language.\n\n• Prompt Engineering – The process of crafting input to get better AI responses.\n\n• Neural Network – A system modeled after the human brain to recognize patterns.\n\n• Machine Learning – A branch of AI focused on systems that learn from data."
+            android:textSize="16sp" />
+
+    </LinearLayout>
+</ScrollView>

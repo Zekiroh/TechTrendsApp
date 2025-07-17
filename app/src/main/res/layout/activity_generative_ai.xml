@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_gen_ai_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Generative AI"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="12dp" />
+
+        <TextView
+            android:id="@+id/tv_gen_ai_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="This page explains what Generative AI is, including tools like ChatGPT, DALL·E, and other generative models that can create content such as text, images, or even code."
+            android:textSize="16sp" />
+
+    </LinearLayout>
+</ScrollView>
