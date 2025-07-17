@@ -2,28 +2,221 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="24dp">
+    android:padding="24dp"
+    android:background="#F5F5F5">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
+        <!-- Reusable Header -->
+        <include layout="@layout/layout_header" />
+
+        <!-- What is Generative AI -->
         <TextView
-            android:id="@+id/tv_gen_ai_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Generative AI"
-            android:textSize="24sp"
+            android:text="What is Generative AI?"
+            android:textSize="18sp"
             android:textStyle="bold"
-            android:layout_marginBottom="12dp" />
+            android:textColor="#222222"
+            android:layout_marginBottom="4dp" />
 
         <TextView
-            android:id="@+id/tv_gen_ai_content"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="This page explains what Generative AI is, including tools like ChatGPT, DALL·E, and other generative models that can create content such as text, images, or even code."
-            android:textSize="16sp" />
+            android:text="Generative AI is a type of artificial intelligence that can create something new, like writing, images, or even music. It’s trained on examples and then tries to generate content based on what it has learned."
+            android:textSize="14sp"
+            android:textColor="#444444"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Tools and Examples -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tools and Examples"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#222222"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Tool 1: ChatGPT -->
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:src="@drawable/example_chatgpt"
+            android:scaleType="fitCenter"
+            android:layout_marginBottom="4dp"
+            android:contentDescription="ChatGPT Example" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ChatGPT"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#1E1E1E"
+            android:layout_marginBottom="2dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="A tool that lets users talk to an AI. It can answer questions, explain topics, or help with writing."
+            android:textSize="14sp"
+            android:textColor="#444444"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Tool 2: DALL·E -->
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:src="@drawable/example_dalle"
+            android:scaleType="fitCenter"
+            android:layout_marginBottom="4dp"
+            android:contentDescription="DALL·E Example" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DALL·E"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#1E1E1E"
+            android:layout_marginBottom="2dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="An AI that turns written descriptions into pictures. For example, you can type 'a futuristic city at sunset' and get a custom image."
+            android:textSize="14sp"
+            android:textColor="#444444"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Tool 3: Midjourney -->
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:src="@drawable/example_midjourney"
+            android:scaleType="fitCenter"
+            android:layout_marginBottom="4dp"
+            android:contentDescription="Midjourney Example" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Midjourney"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#1E1E1E"
+            android:layout_marginBottom="2dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Another AI art tool that focuses on detailed and creative visuals. It’s often used by designers to generate concept art."
+            android:textSize="14sp"
+            android:textColor="#444444"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Tool 4: GitHub Copilot -->
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:src="@drawable/example_copilot"
+            android:scaleType="fitCenter"
+            android:layout_marginBottom="4dp"
+            android:contentDescription="GitHub Copilot Example" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="GitHub Copilot"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#1E1E1E"
+            android:layout_marginBottom="2dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="This one helps developers by suggesting code as you type. It can autocomplete lines or even entire functions."
+            android:textSize="14sp"
+            android:textColor="#444444"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Tool 5: MusicLM -->
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:src="@drawable/example_musiclm"
+            android:scaleType="fitCenter"
+            android:layout_marginBottom="4dp"
+            android:contentDescription="MusicLM Example" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MusicLM"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#1E1E1E"
+            android:layout_marginBottom="2dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="An experimental AI that can generate music based on prompts. You can describe the mood or style, and it tries to match it."
+            android:textSize="14sp"
+            android:textColor="#444444"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Tool 6: Runway ML -->
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:src="@drawable/example_runwayml"
+            android:scaleType="fitCenter"
+            android:layout_marginBottom="4dp"
+            android:contentDescription="Runway ML Example" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Runway ML"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#1E1E1E"
+            android:layout_marginBottom="2dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="A tool for creators that makes it easier to edit videos and add effects using AI. It's used a lot for short-form content and TikTok-style videos."
+            android:textSize="14sp"
+            android:textColor="#444444"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Future Potential -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Future Potential"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#222222"
+            android:layout_marginBottom="4dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Generative AI is starting to appear in schools, creative apps, and developer tools. In the future, it might help people do things faster and come up with new ideas more easily."
+            android:textSize="14sp"
+            android:textColor="#444444"
+            android:layout_marginBottom="32dp" />
+
+        <!-- Footer -->
+        <include layout="@layout/layout_footer" />
 
     </LinearLayout>
 </ScrollView>
