@@ -156,14 +156,31 @@
         </GridLayout>
 
         <!-- Footer -->
-        <TextView
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Code Zero • Final Project in IT0079"
-            android:textColor="#AAAAAA"
-            android:textSize="12sp"
-            android:layout_marginTop="32dp"
-            android:layout_marginBottom="12dp" />
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:padding="12dp"
+            android:layout_marginTop="36dp"
+            android:background="#E0E0E0">
+
+            <ImageView
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:src="@drawable/ic_codezero"
+                android:tint="#555555"
+                android:layout_marginEnd="8dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Code Zero • Final Project in IT0079"
+                android:textColor="#555555"
+                android:textSize="12sp"
+                android:fontFamily="sans-serif-medium" />
+        </LinearLayout>
+
 
     </LinearLayout>
 </ScrollView>

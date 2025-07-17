@@ -35,5 +35,27 @@ class HomeActivity : AppCompatActivity() {
         findViewById<LinearLayout>(R.id.btn_glossary).setOnClickListener {
             startActivity(Intent(this, GlossaryActivity::class.java))
         }
+
+        // Fade-in animation for grid cards
+        val cards = listOf(
+            R.id.btn_generative_ai,
+            R.id.btn_healthcare_ai,
+            R.id.btn_autonomous_tech,
+            R.id.btn_xr,
+            R.id.btn_ethical_ai,
+            R.id.btn_glossary
+        )
+
+        cards.forEachIndexed { index, id ->
+            val card = findViewById<LinearLayout>(id)
+            card.alpha = 0f
+            card.translationY = 40f
+            card.animate()
+                .alpha(1f)
+                .translationY(0f)
+                .setStartDelay((index * 100).toLong())
+                .setDuration(400)
+                .start()
+        }
     }
 }
