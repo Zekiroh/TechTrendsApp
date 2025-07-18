@@ -2,26 +2,142 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="24dp">
+    android:padding="24dp"
+    android:background="#F5F5F5">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
+        <!-- Reusable Header -->
+        <include layout="@layout/layout_header" />
+
+        <!-- What is Ethical AI -->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Ethical AI and Governance"
-            android:textSize="24sp"
+            android:text="What is Ethical AI?"
+            android:textSize="18sp"
             android:textStyle="bold"
+            android:textColor="#222222"
+            android:layout_marginBottom="4dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ethical AI is about making sure artificial intelligence is designed and used responsibly. It focuses on fairness, transparency, and safety in both how AI is built and how it's used."
+            android:textSize="14sp"
+            android:textColor="#444444"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Key Issues and Examples -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Key Topics and Examples"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#222222"
             android:layout_marginBottom="12dp" />
 
+        <!-- Example 1: Bias in AI -->
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:src="@drawable/example_ai_bias"
+            android:scaleType="fitCenter"
+            android:layout_marginBottom="4dp"
+            android:contentDescription="AI Bias" />
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Understand the importance of ethics in AI — including topics like algorithmic bias, job displacement, misinformation, and the need for global AI regulations and transparency."
-            android:textSize="16sp" />
+            android:text="Bias in AI Models"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#1E1E1E"
+            android:layout_marginBottom="2dp" />
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="AI systems can reflect bias from the data they are trained on, leading to unfair decisions in areas like hiring or lending."
+            android:textSize="14sp"
+            android:textColor="#444444"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Example 2: Deepfakes and Misinformation -->
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:src="@drawable/example_deepfake"
+            android:scaleType="fitCenter"
+            android:layout_marginBottom="4dp"
+            android:contentDescription="Deepfakes" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Deepfakes and Misinformation"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#1E1E1E"
+            android:layout_marginBottom="2dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="AI-generated fake content can be used to mislead people, spread false information, or damage reputations."
+            android:textSize="14sp"
+            android:textColor="#444444"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Example 3: Explainable AI -->
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:src="@drawable/example_explainable_ai"
+            android:scaleType="fitCenter"
+            android:layout_marginBottom="4dp"
+            android:contentDescription="Explainable AI" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Explainable AI (XAI)"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#1E1E1E"
+            android:layout_marginBottom="2dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="This focuses on making AI decisions understandable to humans, especially in high-stakes areas like healthcare or finance."
+            android:textSize="14sp"
+            android:textColor="#444444"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Future Potential -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Future Potential"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#222222"
+            android:layout_marginBottom="4dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="As AI gets more powerful, ethical development will be critical to avoid harm, protect people’s rights, and build trust in how AI is used."
+            android:textSize="14sp"
+            android:textColor="#444444"
+            android:layout_marginBottom="32dp" />
+
+        <!-- Reusable Footer -->
+        <include layout="@layout/layout_footer" />
     </LinearLayout>
 </ScrollView>

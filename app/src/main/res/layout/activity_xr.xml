@@ -2,26 +2,142 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="24dp">
+    android:padding="24dp"
+    android:background="#F5F5F5">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
+        <!-- Reusable Header -->
+        <include layout="@layout/layout_header" />
+
+        <!-- What is XR -->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Extended Reality (XR)"
-            android:textSize="24sp"
+            android:text="What is Extended Reality (XR)?"
+            android:textSize="18sp"
             android:textStyle="bold"
+            android:textColor="#222222"
+            android:layout_marginBottom="4dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="XR is an umbrella term for Augmented Reality (AR), Virtual Reality (VR), and Mixed Reality (MR). These technologies change how we experience the digital and physical world."
+            android:textSize="14sp"
+            android:textColor="#444444"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Applications and Examples -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Applications and Examples"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#222222"
             android:layout_marginBottom="12dp" />
 
+        <!-- Example 1: AR in Mobile -->
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:src="@drawable/example_ar_mobile"
+            android:scaleType="fitCenter"
+            android:layout_marginBottom="4dp"
+            android:contentDescription="Mobile AR" />
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Learn how XR combines Augmented Reality (AR), Virtual Reality (VR), and Mixed Reality (MR) to revolutionize how we interact with digital environments — from gaming to education and remote work."
-            android:textSize="16sp" />
+            android:text="Augmented Reality in Phones"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#1E1E1E"
+            android:layout_marginBottom="2dp" />
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Apps like Pokémon GO use AR to blend digital elements with real-world locations through your phone's camera, letting you interact with virtual objects in physical spaces."
+            android:textSize="14sp"
+            android:textColor="#444444"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Example 2: VR in Gaming -->
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:src="@drawable/example_vr_gaming"
+            android:scaleType="fitCenter"
+            android:layout_marginBottom="4dp"
+            android:contentDescription="VR Gaming" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Virtual Reality Gaming"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#1E1E1E"
+            android:layout_marginBottom="2dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Headsets like Meta Quest or PlayStation VR fully immerse users in digital environments for gaming and experiences."
+            android:textSize="14sp"
+            android:textColor="#444444"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Example 3: MR in Training -->
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:src="@drawable/example_mr_training"
+            android:scaleType="fitCenter"
+            android:layout_marginBottom="4dp"
+            android:contentDescription="Mixed Reality in Training" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mixed Reality for Education and Work"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#1E1E1E"
+            android:layout_marginBottom="2dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Used in classrooms, healthcare, and engineering to train people in safe, simulated environments with real-world context."
+            android:textSize="14sp"
+            android:textColor="#444444"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Future Potential -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Future Potential"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#222222"
+            android:layout_marginBottom="4dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="XR may reshape how we shop, learn, meet, and work. With better hardware and faster internet, these experiences will feel more natural and useful."
+            android:textSize="14sp"
+            android:textColor="#444444"
+            android:layout_marginBottom="32dp" />
+
+        <!-- Reusable Footer -->
+        <include layout="@layout/layout_footer" />
     </LinearLayout>
 </ScrollView>

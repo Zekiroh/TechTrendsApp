@@ -2,26 +2,142 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="24dp">
+    android:padding="24dp"
+    android:background="#F5F5F5">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
+        <!-- Reusable Header -->
+        <include layout="@layout/layout_header" />
+
+        <!-- What is Autonomous Technology -->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Autonomous Technologies"
-            android:textSize="24sp"
+            android:text="What is Autonomous Technology?"
+            android:textSize="18sp"
             android:textStyle="bold"
+            android:textColor="#222222"
+            android:layout_marginBottom="4dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Autonomous technology refers to systems that can operate without constant human control. These systems use sensors, AI, and data to make decisions in real-time."
+            android:textSize="14sp"
+            android:textColor="#444444"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Tools and Examples -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Examples in Use"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#222222"
             android:layout_marginBottom="12dp" />
 
+        <!-- Example 1: Self-Driving Cars -->
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:src="@drawable/example_selfdriving"
+            android:scaleType="fitCenter"
+            android:layout_marginBottom="4dp"
+            android:contentDescription="Self-Driving Car" />
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Explore how AI powers autonomous systems such as self-driving cars, drones, and delivery robots — enabling machines to make real-time decisions without human input."
-            android:textSize="16sp" />
+            android:text="Self-Driving Cars"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#1E1E1E"
+            android:layout_marginBottom="2dp" />
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vehicles that use sensors, GPS, and AI to drive themselves without human input. Companies like Tesla and Waymo are leading this space."
+            android:textSize="14sp"
+            android:textColor="#444444"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Example 2: Delivery Robots -->
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:src="@drawable/example_deliverybot"
+            android:scaleType="fitCenter"
+            android:layout_marginBottom="4dp"
+            android:contentDescription="Delivery Robot" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Delivery Robots"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#1E1E1E"
+            android:layout_marginBottom="2dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Used by companies like Amazon and Starship, these bots deliver groceries and packages without human couriers."
+            android:textSize="14sp"
+            android:textColor="#444444"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Example 3: Autonomous Drones -->
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:src="@drawable/example_drones"
+            android:scaleType="fitCenter"
+            android:layout_marginBottom="4dp"
+            android:contentDescription="Autonomous Drones" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Autonomous Drones"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#1E1E1E"
+            android:layout_marginBottom="2dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Drones that can fly predetermined routes or make real-time flight decisions for tasks like inspection, farming, or delivery."
+            android:textSize="14sp"
+            android:textColor="#444444"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Future Potential -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Future Potential"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#222222"
+            android:layout_marginBottom="4dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Autonomous tech could lead to safer roads, faster deliveries, and more efficient industries. It's being tested in everything from construction sites to hospitals."
+            android:textSize="14sp"
+            android:textColor="#444444"
+            android:layout_marginBottom="32dp" />
+
+        <!-- Reusable Footer -->
+        <include layout="@layout/layout_footer" />
     </LinearLayout>
 </ScrollView>

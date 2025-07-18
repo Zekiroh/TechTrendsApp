@@ -2,26 +2,143 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="24dp">
+    android:padding="24dp"
+    android:background="#F5F5F5">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
+        <!-- Reusable Header -->
+        <include layout="@layout/layout_header" />
+
+        <!-- What is Healthcare AI -->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="AI in Healthcare"
-            android:textSize="24sp"
+            android:text="What is Healthcare AI?"
+            android:textSize="18sp"
             android:textStyle="bold"
-            android:layout_marginBottom="12dp" />
+            android:textColor="#222222"
+            android:layout_marginBottom="4dp" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="This screen explains how AI is transforming healthcare — from diagnostics and patient monitoring to robotic surgeries and virtual health assistants."
-            android:textSize="16sp" />
+            android:text="Healthcare AI refers to technologies that assist doctors, hospitals, and medical researchers using data, predictions, and automation. It helps improve diagnoses, treatments, and patient care."
+            android:textSize="14sp"
+            android:textColor="#444444"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Tools and Examples -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Applications and Examples"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#222222"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Example 1: AI in Diagnosis -->
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:src="@drawable/example_diagnosis_ai"
+            android:scaleType="fitCenter"
+            android:layout_marginBottom="4dp"
+            android:contentDescription="Diagnosis AI" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="AI for Diagnosis"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#1E1E1E"
+            android:layout_marginBottom="2dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="AI can analyze X-rays, MRIs, and other scans to help doctors detect diseases faster and more accurately."
+            android:textSize="14sp"
+            android:textColor="#444444"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Example 2: Virtual Health Assistants -->
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:src="@drawable/example_virtual_assistant"
+            android:scaleType="fitCenter"
+            android:layout_marginBottom="4dp"
+            android:contentDescription="Virtual Assistant" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Virtual Health Assistants"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#1E1E1E"
+            android:layout_marginBottom="2dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chatbots or voice assistants that remind patients to take medicine, log symptoms, or answer basic health questions."
+            android:textSize="14sp"
+            android:textColor="#444444"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Example 3: Predictive Analytics -->
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:src="@drawable/example_predictive_ai"
+            android:scaleType="fitCenter"
+            android:layout_marginBottom="4dp"
+            android:contentDescription="Predictive AI" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Predictive Analytics"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#1E1E1E"
+            android:layout_marginBottom="2dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hospitals use AI to predict which patients are at risk of complications, so they can take action earlier."
+            android:textSize="14sp"
+            android:textColor="#444444"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Future Potential -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Future Potential"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#222222"
+            android:layout_marginBottom="4dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="AI in healthcare could lead to earlier diagnoses, fewer hospital readmissions, and better support for doctors and patients. It’s one of the fastest-growing areas in medical tech."
+            android:textSize="14sp"
+            android:textColor="#444444"
+            android:layout_marginBottom="32dp" />
+
+        <!-- Reusable Footer -->
+        <include layout="@layout/layout_footer" />
 
     </LinearLayout>
 </ScrollView>

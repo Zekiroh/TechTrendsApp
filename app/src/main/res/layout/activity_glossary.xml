@@ -2,26 +2,83 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="24dp">
+    android:padding="24dp"
+    android:background="#F5F5F5">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
+        <!-- Reusable Header -->
+        <include layout="@layout/layout_header" />
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Glossary"
-            android:textSize="24sp"
+            android:text="Here are some common terms you’ll encounter in tech and AI trends:"
+            android:textSize="14sp"
+            android:textColor="#444444"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Glossary entries below: each term is formatted with a bold title followed by its definition -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="AI (Artificial Intelligence)"
             android:textStyle="bold"
+            android:textSize="14sp"
+            android:textColor="#1E1E1E"
+            android:layout_marginBottom="2dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="A branch of computer science focused on building machines and software that can mimic human thinking and decision-making."
+            android:textSize="14sp"
+            android:textColor="#444444"
             android:layout_marginBottom="12dp" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="• LLM – Large Language Model: A type of AI trained on massive text datasets.\n\n• NLP – Natural Language Processing: The ability of AI to understand and process human language.\n\n• Prompt Engineering – The process of crafting input to get better AI responses.\n\n• Neural Network – A system modeled after the human brain to recognize patterns.\n\n• Machine Learning – A branch of AI focused on systems that learn from data."
-            android:textSize="16sp" />
+        <!-- Each pair of TextViews represents a glossary term and its meaning -->
 
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="ML (Machine Learning)" android:textStyle="bold" android:textSize="14sp" android:textColor="#1E1E1E" android:layout_marginBottom="2dp" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="A subfield of AI where systems learn from data to make predictions or decisions without being explicitly programmed." android:textSize="14sp" android:textColor="#444444" android:layout_marginBottom="12dp" />
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="AR (Augmented Reality)" android:textStyle="bold" android:textSize="14sp" android:textColor="#1E1E1E" android:layout_marginBottom="2dp" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Technology that adds digital content (like filters or overlays) to the real world through your screen or glasses." android:textSize="14sp" android:textColor="#444444" android:layout_marginBottom="12dp" />
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="VR (Virtual Reality)" android:textStyle="bold" android:textSize="14sp" android:textColor="#1E1E1E" android:layout_marginBottom="2dp" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Fully immersive digital experiences where users wear a headset to explore a simulated environment." android:textSize="14sp" android:textColor="#444444" android:layout_marginBottom="12dp" />
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="NLP (Natural Language Processing)" android:textStyle="bold" android:textSize="14sp" android:textColor="#1E1E1E" android:layout_marginBottom="2dp" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="A field of AI that helps computers understand, interpret, and respond to human language." android:textSize="14sp" android:textColor="#444444" android:layout_marginBottom="12dp" />
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="IoT (Internet of Things)" android:textStyle="bold" android:textSize="14sp" android:textColor="#1E1E1E" android:layout_marginBottom="2dp" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="The network of connected physical devices that can collect and share data, like smartwatches or home assistants." android:textSize="14sp" android:textColor="#444444" android:layout_marginBottom="12dp" />
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Generative AI" android:textStyle="bold" android:textSize="14sp" android:textColor="#1E1E1E" android:layout_marginBottom="2dp" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="AI that creates new content like text, music, or images based on patterns learned from data." android:textSize="14sp" android:textColor="#444444" android:layout_marginBottom="12dp" />
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Prompt" android:textStyle="bold" android:textSize="14sp" android:textColor="#1E1E1E" android:layout_marginBottom="2dp" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="A user input or instruction given to an AI to generate a specific response or output." android:textSize="14sp" android:textColor="#444444" android:layout_marginBottom="12dp" />
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="LLM (Large Language Model)" android:textStyle="bold" android:textSize="14sp" android:textColor="#1E1E1E" android:layout_marginBottom="2dp" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="A type of AI model trained on massive text data to generate human-like responses." android:textSize="14sp" android:textColor="#444444" android:layout_marginBottom="12dp" />
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Deep Learning" android:textStyle="bold" android:textSize="14sp" android:textColor="#1E1E1E" android:layout_marginBottom="2dp" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="A branch of machine learning using complex neural networks to learn from large amounts of data." android:textSize="14sp" android:textColor="#444444" android:layout_marginBottom="12dp" />
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Ethical AI" android:textStyle="bold" android:textSize="14sp" android:textColor="#1E1E1E" android:layout_marginBottom="2dp" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="The responsible use of AI to ensure fairness, transparency, privacy, and accountability." android:textSize="14sp" android:textColor="#444444" android:layout_marginBottom="12dp" />
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Healthcare AI" android:textStyle="bold" android:textSize="14sp" android:textColor="#1E1E1E" android:layout_marginBottom="2dp" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="The use of AI technologies to improve medical diagnostics, patient care, and healthcare operations." android:textSize="14sp" android:textColor="#444444" android:layout_marginBottom="12dp" />
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="XR (Extended Reality)" android:textStyle="bold" android:textSize="14sp" android:textColor="#1E1E1E" android:layout_marginBottom="2dp" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="An umbrella term that includes AR, VR, and MR (Mixed Reality) to enhance the physical environment with digital elements." android:textSize="14sp" android:textColor="#444444" android:layout_marginBottom="24dp" />
+
+        <!-- Reusable Footer -->
+        <include layout="@layout/layout_footer" />
     </LinearLayout>
 </ScrollView>
