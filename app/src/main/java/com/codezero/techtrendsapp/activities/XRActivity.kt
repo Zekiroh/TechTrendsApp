@@ -11,15 +11,17 @@ class XRActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_xr)
 
+        // Handle back button click to close the activity
         val backButton = findViewById<ImageView>(R.id.btn_back)
         backButton.setOnClickListener {
-            finish()
+            finish() // Closes the current screen and returns to the home
         }
 
+        // Set title and subtitle text in the header
         val title = findViewById<TextView>(R.id.header_title)
         val subtitle = findViewById<TextView>(R.id.header_subtitle)
 
-        title.text = "Extended Reality (XR)"
-        subtitle.text = "Virtual and Augmented tech"
+        title.text = "Extended Reality (XR)"          // Title shown in the top header
+        subtitle.text = "Virtual and Augmented tech"  // Short descriptive subtitle
     }
 }

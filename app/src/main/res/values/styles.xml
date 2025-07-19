@@ -1,6 +1,6 @@
 <resources>
 
-    <!-- Original style from your old button layout -->
+    <!-- Style for a button with card-like appearance -->
     <style name="CardButtonStyle" parent="Widget.AppCompat.Button">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
@@ -11,7 +11,7 @@
         <item name="android:background">@drawable/card_background</item>
     </style>
 
-    <!-- 🔲 Grid card style for redesigned homepage -->
+    <!-- Style used for each card in the Home screen grid -->
     <style name="GridCardStyle">
         <item name="android:layout_width">0dp</item>
         <item name="android:layout_height">wrap_content</item>
@@ -25,7 +25,7 @@
         <item name="android:elevation">4dp</item>
     </style>
 
-    <!-- Title inside each grid card -->
+    <!-- Title text style inside each card -->
     <style name="CardTitleStyle">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
@@ -35,7 +35,7 @@
         <item name="android:layout_marginBottom">2dp</item>
     </style>
 
-    <!-- Subtext below each title -->
+    <!-- Subtext style below each title in a card -->
     <style name="CardSubtextStyle">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>

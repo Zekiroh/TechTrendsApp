@@ -85,20 +85,24 @@
             <!-- Autonomous Tech Card -->
             <LinearLayout
                 android:id="@+id/btn_autonomous_tech"
-                style="@style/GridCardStyle">
+                style="@style/GridCardStyle"
+                android:layout_height="142dp">
+
                 <ImageView
-                    android:src="@drawable/ic_autonomous"
                     android:layout_width="32dp"
                     android:layout_height="32dp"
-                    android:layout_marginBottom="6dp" />
+                    android:layout_marginBottom="6dp"
+                    android:src="@drawable/ic_autonomous" />
+
                 <TextView
+                    style="@style/CardTitleStyle"
                     android:text="Autonomous Tech"
-                    android:textAlignment="center"
-                    style="@style/CardTitleStyle" />
+                    android:textAlignment="center" />
+
                 <TextView
+                    style="@style/CardSubtextStyle"
                     android:text="Smart systems in action"
-                    android:textAlignment="center"
-                    style="@style/CardSubtextStyle" />
+                    android:textAlignment="center" />
             </LinearLayout>
 
             <!-- XR Card -->

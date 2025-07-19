@@ -6,12 +6,14 @@
     android:gravity="center_vertical"
     android:layout_marginBottom="16dp">
 
+    <!-- Container for back button -->
     <FrameLayout
         android:layout_width="48dp"
         android:layout_height="48dp"
         android:clickable="true"
         android:focusable="true">
 
+        <!-- Back button icon -->
         <ImageView
             android:id="@+id/btn_back"
             android:layout_width="30dp"
@@ -21,6 +23,7 @@
             android:contentDescription="Back" />
     </FrameLayout>
 
+    <!-- Title and subtitle container -->
     <LinearLayout
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -28,6 +31,7 @@
         android:orientation="vertical"
         android:paddingStart="12dp">
 
+        <!-- Main title -->
         <TextView
             android:id="@+id/header_title"
             android:layout_width="wrap_content"
@@ -37,6 +41,7 @@
             android:textStyle="bold"
             android:textColor="#1E1E1E" />
 
+        <!-- Subtitle text -->
         <TextView
             android:id="@+id/header_subtitle"
             android:layout_width="wrap_content"

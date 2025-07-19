@@ -8,6 +8,7 @@
     android:layout_marginTop="36dp"
     android:background="#E0E0E0">
 
+    <!-- Branding icon -->
     <ImageView
         android:layout_width="16dp"
         android:layout_height="16dp"
@@ -15,6 +16,7 @@
         android:tint="#555555"
         android:layout_marginEnd="8dp" />
 
+    <!-- Footer text -->
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

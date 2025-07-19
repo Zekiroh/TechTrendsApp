@@ -11,15 +11,17 @@ class EthicalAIActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_ethical_ai)
 
+        // Handle back button click to close the activity
         val backButton = findViewById<ImageView>(R.id.btn_back)
         backButton.setOnClickListener {
-            finish()
+            finish() // Closes the current screen and returns to the home
         }
 
+        // Set title and subtitle text in the header
         val title = findViewById<TextView>(R.id.header_title)
         val subtitle = findViewById<TextView>(R.id.header_subtitle)
 
-        title.text = "Ethical AI"
-        subtitle.text = "Fair and safe practices"
+        title.text = "Ethical AI"                     // Title shown in the top header
+        subtitle.text = "Fair and safe practices"     // Short descriptive subtitle
     }
 }
