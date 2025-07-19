@@ -59,10 +59,12 @@
                     android:layout_marginBottom="6dp" />
                 <TextView
                     android:text="Generative AI"
-                    style="@style/CardTitleStyle" />
+                    style="@style/CardTitleStyle"
+                    android:textAlignment="center" />
                 <TextView
                     android:text="Create content with AI"
-                    style="@style/CardSubtextStyle" />
+                    style="@style/CardSubtextStyle"
+                    android:textAlignment="center" />
             </LinearLayout>
 
             <!-- Healthcare AI Card -->
@@ -76,10 +78,12 @@
                     android:layout_marginBottom="6dp" />
                 <TextView
                     android:text="Healthcare AI"
-                    style="@style/CardTitleStyle" />
+                    style="@style/CardTitleStyle"
+                    android:textAlignment="center" />
                 <TextView
                     android:text="Transform patient care"
-                    style="@style/CardSubtextStyle" />
+                    style="@style/CardSubtextStyle"
+                    android:textAlignment="center" />
             </LinearLayout>
 
             <!-- Autonomous Tech Card -->
@@ -96,7 +100,7 @@
 
                 <TextView
                     style="@style/CardTitleStyle"
-                    android:text="Autonomous Tech"
+                    android:text="Autonomous \nTech"
                     android:textAlignment="center" />
 
                 <TextView
@@ -108,20 +112,24 @@
             <!-- XR Card -->
             <LinearLayout
                 android:id="@+id/btn_xr"
-                style="@style/GridCardStyle">
+                style="@style/GridCardStyle"
+                android:layout_height="144dp">
+
                 <ImageView
-                    android:src="@drawable/ic_xr"
                     android:layout_width="32dp"
                     android:layout_height="32dp"
-                    android:layout_marginBottom="6dp" />
+                    android:layout_marginBottom="6dp"
+                    android:src="@drawable/ic_xr" />
+
                 <TextView
-                    android:text="Extended Reality (XR)"
-                    android:textAlignment="center"
-                    style="@style/CardTitleStyle" />
+                    style="@style/CardTitleStyle"
+                    android:text="Extended Reality \n (XR)"
+                    android:textAlignment="center" />
+
                 <TextView
+                    style="@style/CardSubtextStyle"
                     android:text="Virtual and Augmented tech"
-                    android:textAlignment="center"
-                    style="@style/CardSubtextStyle" />
+                    android:textAlignment="center" />
             </LinearLayout>
 
             <!-- Ethical AI Card -->
@@ -135,10 +143,12 @@
                     android:layout_marginBottom="6dp" />
                 <TextView
                     android:text="Ethical AI"
-                    style="@style/CardTitleStyle" />
+                    style="@style/CardTitleStyle"
+                    android:textAlignment="center" />
                 <TextView
-                    android:text="Fair and safe practices"
-                    style="@style/CardSubtextStyle" />
+                    android:text="Fair and \n safe practices"
+                    style="@style/CardSubtextStyle"
+                    android:textAlignment="center" />
             </LinearLayout>
 
             <!-- Glossary Card -->
@@ -152,10 +162,12 @@
                     android:layout_marginBottom="6dp" />
                 <TextView
                     android:text="Glossary"
-                    style="@style/CardTitleStyle" />
+                    style="@style/CardTitleStyle"
+                    android:textAlignment="center" />
                 <TextView
-                    android:text="Terms and meanings"
-                    style="@style/CardSubtextStyle" />
+                    android:text="Terms and \nmeanings"
+                    style="@style/CardSubtextStyle"
+                    android:textAlignment="center" />
             </LinearLayout>
         </GridLayout>
 
