@@ -19,7 +19,7 @@ TechTrendsApp is an informational Android application that showcases:
 
 Each module contains explanations and examples designed to introduce modern technology trends in a simple and accessible way.
 
-## Tech Stack
+## Built With
 
 - Kotlin
 - Android Studio
